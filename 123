@@ -1,0 +1,57 @@
+<fab-form >
+	<fab-collapsible-panel
+		is-collapsible="false"
+		caption="{{inputParams.ErrorCaption || 'Hello, World !'}}">
+
+	    <fab-row>
+			<fab-col align="left">
+				<fab-info
+					kind="large"
+					caption="Подразделение"
+					text="{{inputParams.Result.departmentName}}">
+
+				</fab-info>
+			</fab-col>
+		</fab-row>
+			<fab-row>
+				<fab-col>
+					<fab-label
+						kind="bold"
+						caption="{{inputParams.ErrorMessage}}"
+					></fab-label>
+				</fab-col>
+			</fab-row>
+        <fab-row>
+          <fab-col>
+             <fab-edit fab-col col = "8"
+                id = "EDIT_ONE"
+                caption = "Укажите что вам нужно для счастья"
+                value = "edDocSeries"
+             >
+             </fab-edit>
+             <fab-edit fab-col col = "2"
+                id = "EDIT_TWO"
+                caption = "Дата"
+                value = "edDoc"
+             >
+             </fab-edit>
+          </fab-col>
+
+        </fab_row>
+
+	</fab-collapsible-panel>
+
+	<fab-row>
+        <fab-col align="right">
+			<fab-button
+				id="btnClose"
+				caption="Закрыть"
+				kind="primary medium"
+				tab-index="101"
+                                 on-click="cancel()"
+                                   >
+			</fab-button>
+        </fab-col>
+
+
+    </fab-row>

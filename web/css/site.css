@@ -1,0 +1,375 @@
+@font-face {
+  font-family: ps4;
+  src: url(../fonts/ps4.otf) format("opentype");
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+    pading: 2px;
+}
+
+.jumbotron h1 {
+         font-family: ps4; 
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    /*padding: 14px 24px;*/
+}
+
+.new_g.php{
+
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+/*-------------мое---------------*/
+.navbar-brand {
+    margin-top: -12px;
+}
+
+.col-1-2 {
+  width: 50%;
+  float: left;
+}
+.col-1-3 {
+  width: 33.3333333333%;
+  float: left;
+}
+.col-lg-4 {margin-top: 15px}
+
+.col-lg-4{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*.col-lg-4 {
+    margin-top: 10px;
+    padding: 2px;
+    box-shadow: 4px 7px 14px 0px black;
+    border-radius: 5px;
+}*/
+
+/*категории*/
+.col-1-4 {
+  width: 15%;
+  float: left;
+  border-radius: 15px;
+  padding-top:10px;
+ }
+/*товары*/
+.col-3-4 {
+  width: 100%;
+  float: right;
+}
+.listProducts{
+	float:left
+}
+
+.search_row{width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.twitter {
+    box-shadow: 4px 7px 14px 0px black;
+    border-radius: 5px;
+    width: 350px;
+    margin: auto;
+}
+/*продукт*/
+.product{
+	background: #337ab7;
+	border-radius: 5px;
+	width: 230px;
+	height: 370px;
+	float:left;
+	margin: 5px;
+    color:white;
+    /*text-align:center;*/
+    box-shadow: 4px 7px 14px 0px black;
+}
+
+/*виджет новинок*/
+.price{
+    font-size:20px;
+}
+
+.product .price {
+    font-size:16px;
+    margin-left: 3px;
+    float: left;
+    margin-bottom: -10px;
+}
+.product img
+{
+    width: 221px;
+    height: 260px;
+}
+.product .buy {
+    float: right;
+}
+.product p{
+    margin: 0 auto;
+    width: 98%;
+    height: 50px;
+}
+.product .buy {float: right;}
+
+/*маркеры*/
+.product .shop-label {
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+.product .hit  {background: rgba(173, 255, 47, 0.6);}
+.product .sale {background: rgba(255, 140, 0, 0.8);}
+.product .new  {background: rgba(220, 20, 60, 0.6)}
+
+
+/*----------------------------------------*/
+.search-results {text-align: center}
+
+.about {
+    width: 90%;
+}
+
+/*------------------------подвал----------------------------*/
+.footer {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    margin-bottom: -100px;
+}
+.soc_buttons li {
+    list-style-type: none; 
+    display: inline
+}
+.soc_buttons {
+}
+.icon-twitter, .icon-vk{
+    font-size: 30px
+}
+.icon-twitter:hover, .icon-vk:hover {
+    text-decoration: none; 
+    color: #0f0f0f
+}
+.img_logo {
+    float: left;
+}
+
+/*----------------------Инструкция страница--------------------*/
+ .instruction h4 {
+     text-align: center;
+ }
+.bullet {
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;
+    /*width: 90%;*/
+    /*margin-left: 15%;*/
+    /*margin-right: 15%;*/
+}
+.bullet li {
+    position: relative;
+    margin-bottom: 1.5em;
+    border: 3px solid #337ab7;
+    padding: 0.6em;
+    border-radius: 4px;
+    background: #FEFEFE;
+    color: #231F20;
+
+}
+.bullet li:before {
+    position: absolute;
+    top: -0.7em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #337ab7;
+    background: #FEFEFE;
+    border-radius: 50%;
+    counter-increment: li;
+    content: counter(li);
+}
+/*-----------------слайдер на стартовой странице-----------------------------*/
+#slider-wrap{ /* Оболочка слайдера и кнопок */
+    /*width:390px;*/
+}
+#slider{ /* Оболочка слайдера */
+    width:330px;
+    height:400px;
+    position:relative;
+    margin: 0 auto;
+    font-family: ps4;
+}
+#prewbutton, #nextbutton{ /* Ссылка "Следующий" и "Педыдущий" */
+    display:block;
+    width:15px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    /*background:url('./arrowBg.png') left center no-repeat;*/
+    background:url('../images/arrowBg.png') left center no-repeat;
+    opacity:0.9;
+    z-index:3;
+    outline:none !important;
+}
+#prewbutton{
+    left: -10px;
+}
+
+#nextbutton{
+    right:-10px;
+    /*background:url('./arrowBg.png') right center no-repeat;*/
+    background:url('../images/arrowBg.png') right center no-repeat;
+    /*background:Url::to('./arrowBg.png');*/
+}
+
+#prewbutton:hover, #nextbutton:hover{
+    opacity:1;}
+
+.slide {
+    background: #337ab7;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 15px;
+    color:white;
+    box-shadow: 4px 7px 14px 0px black;
+}
+.slide img {
+    width: 300px;
+    height: 400px;
+}
+
+
+/*------------------------мобильные----------------------------*/
+@media screen and (max-width: 767px) {
+    .col-3-4 {
+        width: 100%;
+    }
+    .col-1-4 {
+        width: 100%;
+    }
+    .product{
+        width: 160px;
+        height: 280px;
+        /*height: 100%;*/
+    }
+    .product img
+    {
+        width: 155px;
+        height: 180px;
+    }
+    p {
+        font-size: 10px;
+    }
+    .product .price{
+        font-size: 12px;
+    }
+
+}
+

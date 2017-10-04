@@ -1,0 +1,71 @@
+<fab-form>
+    <fab-collapsible-panel
+            is-collapsible="false"
+            caption="{{inputParams.ErrorCaption || 'Начисление премии x10'}}">
+        <fab-row>
+            <fab-col align="left">
+                <fab-info
+                        kind="large"
+                        caption="Филиалу"
+                        text="{{inputParams.Result.departmentName}}">
+
+                </fab-info>
+            </fab-col>
+        </fab-row>
+        <fab-row>
+            <fab-col>
+                <fab-label
+                        kind="bold"
+                        caption="{{inputParams.ErrorMessage}}"
+                ></fab-label>
+            </fab-col>
+        </fab-row>
+        <fab-row>
+            <fab-col>
+                <fab-info
+                        kind="large"
+                        caption="Филиалу"
+                        text="{{inputParams.Result.departmentName}}">
+
+                </fab-info>
+
+                <fab-edit fab-col col = "4"
+                          id = "EDIT_ONE"
+                          caption = "Фамилия"
+                          value = "edDocSeries"
+                >
+                </fab-edit>
+
+                <fab-edit fab-col col = "4"
+                          id = "EDIT_TWO"
+                          caption = "Имя"
+                          value = "edDocSeries"
+                >
+                </fab-edit>
+                <fab-edit fab-col col = "4"
+                          id = "EDIT_TREE"
+                          caption = "Отчество"
+                          value = "edDocSeries"
+                >
+                </fab-edit>
+            </fab-col>
+
+        </fab-row>
+
+    </fab-collapsible-panel>
+
+    <fab-row>
+        <fab-col align="right">
+            <fab-button
+                    id="btnClose"
+                    caption="Начислить"
+                    kind="primary medium"
+                    tab-index="101"
+                    on-click="cancel()"
+            >
+            </fab-button>
+        </fab-col>
+
+
+</fab-row>
+</fab-form>
